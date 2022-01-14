@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/gusev/StudioProjects/7MinutesWorkout/app/src/main/res/drawable/item_circular_color_accent_border.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/gusev/StudioProjects/7MinutesWorkout/app/src/main/res/drawable-v24/circular_progress_bar_gray.xml" value="0.23493360572012256" />
+        <entry key="..\:/Users/gusev/StudioProjects/7MinutesWorkout/app/src/main/res/drawable-v24/circular_progress_bar_grey.xml" value="0.23493360572012256" />
+        <entry key="..\:/Users/gusev/StudioProjects/7MinutesWorkout/app/src/main/res/drawable/circular_progress_bar.xml" value="0.136" />
+        <entry key="..\:/Users/gusev/StudioProjects/7MinutesWorkout/app/src/main/res/drawable/item_circular_color_accent_background.xml" value="0.23493360572012256" />
+        <entry key="..\:/Users/gusev/StudioProjects/7MinutesWorkout/app/src/main/res/drawable/item_circular_color_accent_border.xml" value="0.176" />
         <entry key="..\:/Users/gusev/StudioProjects/7MinutesWorkout/app/src/main/res/drawable/item_circular_color_accent_border_ripple.xml" value="0.23958333333333334" />
-        <entry key="..\:/Users/gusev/StudioProjects/7MinutesWorkout/app/src/main/res/layout/activity_exercise.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/gusev/StudioProjects/7MinutesWorkout/app/src/main/res/layout/activity_exercise.xml" value="0.264" />
         <entry key="..\:/Users/gusev/StudioProjects/7MinutesWorkout/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
