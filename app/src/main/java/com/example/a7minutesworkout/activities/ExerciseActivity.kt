@@ -1,5 +1,6 @@
 package com.example.a7minutesworkout.activities
 
+import android.app.Dialog
 import android.content.Intent
 import android.media.MediaPlayer
 import android.net.Uri
@@ -15,6 +16,7 @@ import com.example.a7minutesworkout.data.ExerciseModel
 import com.example.a7minutesworkout.adapters.ExerciseStatusAdapter
 import com.example.a7minutesworkout.R
 import com.example.a7minutesworkout.databinding.ActivityExerciseBinding
+import com.example.a7minutesworkout.databinding.DialogCustomBackBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -51,7 +53,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
         }
         binding?.toolBarExercise?.setNavigationOnClickListener {
-            onBackPressed()
+            customDialogBackButton()
         }
 
         //Create the list of the exercises
@@ -62,6 +64,28 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         tts = TextToSpeech(this, this)
         initMediaPlayer()
         setUpRestView()
+    }
+
+    private fun customDialogBackButton() {
+        val customDialog = Dialog(this)
+        val dialogBinding = DialogCustomBackBinding.inflate(layoutInflater)
+        customDialog.setContentView(dialogBinding.root)
+
+        //Cancel option to dismiss dialog from outside of the dialog
+        customDialog.setCanceledOnTouchOutside(false)
+
+        dialogBinding.dialogYes.setOnClickListener {
+            //Close the current activity
+            this@ExerciseActivity.finish()
+            customDialog.dismiss()
+        }
+
+        dialogBinding.dialogNo.setOnClickListener {
+            //Stay in the current activity
+            customDialog.dismiss()
+        }
+        customDialog.show()
+
     }
 
     private fun setUpExerciseRecyclerView() {
@@ -194,6 +218,10 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 }
             }
         }.start()
+    }
+
+    override fun onBackPressed() {
+        customDialogBackButton()
     }
 
     override fun onDestroy() {

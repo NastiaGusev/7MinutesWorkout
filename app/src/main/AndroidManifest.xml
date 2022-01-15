@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.7MinutesWorkout">
         <activity
+            android:name=".activities.BMIActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.FinishActivity"
             android:exported="false" />
         <activity
