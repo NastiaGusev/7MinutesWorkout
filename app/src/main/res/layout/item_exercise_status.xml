@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_margin="1dp"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id="@+id/txtItem"
+    android:background="@drawable/item_circular_color_grey_background"
+    android:text="1"
+    android:textColor="@color/darkerGrey"
+    android:gravity="center"
+    android:padding="3dp"
+    android:textStyle="bold"
+    >
+
+</TextView>

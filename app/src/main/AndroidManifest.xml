@@ -4,7 +4,7 @@
 
     <queries>
         <intent>
-            <action android:name="anroid.intent.action.TTS_SERVICE"/>
+            <action android:name="anroid.intent.action.TTS_SERVICE" />
         </intent>
     </queries>
 
@@ -16,10 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.7MinutesWorkout">
         <activity
-            android:name=".ExerciseActivity"
+            android:name=".activities.FinishActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.ExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExerciseActivity">
+    tools:context=".activities.ExerciseActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBarExercise"
@@ -126,7 +126,7 @@
         android:visibility="invisible"
         tools:visibility="visible"
         android:textColor="@color/yellow"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="16dp"/>
 
     <FrameLayout
         android:id="@+id/frameLayoutProgressbarExercise"
@@ -134,13 +134,13 @@
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/item_circular_color_accent_border"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewExerciseStatus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
         android:visibility="invisible"
         tools:visibility="visible"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         >
 
         <ProgressBar
@@ -173,7 +173,16 @@
                 android:textStyle="bold"
                 android:textSize="25sp"/>
         </LinearLayout>
-
     </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewExerciseStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

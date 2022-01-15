@@ -1,4 +1,6 @@
-package com.example.a7minutesworkout
+package com.example.a7minutesworkout.data
+
+import com.example.a7minutesworkout.R
 
 object Constants {
 
