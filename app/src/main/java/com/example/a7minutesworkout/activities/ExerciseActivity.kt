@@ -22,8 +22,8 @@ import kotlin.collections.ArrayList
 
 class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
-    private var restTimerDuration: Long = 1
-    private var exerciseTimerDuration: Long = 3
+    private var restTimerDuration: Long = 10
+    private var exerciseTimerDuration: Long = 30
 
     private var binding: ActivityExerciseBinding? = null
 
