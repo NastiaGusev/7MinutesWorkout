@@ -1,6 +1,6 @@
 # 7MinutesWorkout
 Workout application with 12 different 30s exercises that change with a built-in timer to form the best 7-minute workout. 
-Keep trak of your workouts in the exercise history, and mange your goals with the BMI calcultor.
+Keep track of your workouts in the exercise history, and mange your goals with the BMI calculator.
 <p float="left" align="middle" padding="5">
   <img src= "https://user-images.githubusercontent.com/49269198/150838171-89551d6c-ca03-410f-96da-ca986b58d834.jpg" width="250" />
   <img src= "https://user-images.githubusercontent.com/49269198/150841081-5c11749f-2efe-4625-ba5f-eab2d395c040.jpg" width="250" />
